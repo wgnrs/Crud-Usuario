@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wagne\\Projetos\\CRUD\\usuario\\usuario.csproj": {}
+    "c:\\Users\\wagne\\Projetos\\Crud-Usuario\\usuario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wagne\\Projetos\\CRUD\\usuario\\usuario.csproj": {
+    "c:\\Users\\wagne\\Projetos\\Crud-Usuario\\usuario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wagne\\Projetos\\CRUD\\usuario\\usuario.csproj",
+        "projectUniqueName": "c:\\Users\\wagne\\Projetos\\Crud-Usuario\\usuario.csproj",
         "projectName": "usuario",
-        "projectPath": "C:\\Users\\wagne\\Projetos\\CRUD\\usuario\\usuario.csproj",
+        "projectPath": "c:\\Users\\wagne\\Projetos\\Crud-Usuario\\usuario.csproj",
         "packagesPath": "C:\\Users\\wagne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wagne\\Projetos\\CRUD\\usuario\\obj\\",
+        "outputPath": "c:\\Users\\wagne\\Projetos\\Crud-Usuario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wagne\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,6 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +39,26 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
