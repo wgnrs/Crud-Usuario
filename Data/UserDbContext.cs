@@ -1,12 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using user.Model;
 
 namespace user.Data
 {
-    public class UserDbContext
+    public class UserDbContext : DbContext
     {
-        
+        public UserDbContext(DbContextOptions<UserDbContext> options) : base(options)
+        {
+        }
+
+        public DbSet<User> Users { get; set; }
+
     }
 }
