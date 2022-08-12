@@ -943,11 +943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\wagne\\Projetos\\Crud-Usuario\\usuario.csproj",
+      "projectUniqueName": "C:\\Users\\wagne\\Projetos\\Crud-Usuario\\usuario.csproj",
       "projectName": "usuario",
-      "projectPath": "c:\\Users\\wagne\\Projetos\\Crud-Usuario\\usuario.csproj",
+      "projectPath": "C:\\Users\\wagne\\Projetos\\Crud-Usuario\\usuario.csproj",
       "packagesPath": "C:\\Users\\wagne\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\wagne\\Projetos\\Crud-Usuario\\obj\\",
+      "outputPath": "C:\\Users\\wagne\\Projetos\\Crud-Usuario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wagne\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -957,6 +957,7 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

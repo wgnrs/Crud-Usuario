@@ -54,3 +54,10 @@ C:\Users\wagne\Projetos\Crud-Usuario\obj\Debug\net6.0\refint\usuario.dll
 C:\Users\wagne\Projetos\Crud-Usuario\obj\Debug\net6.0\usuario.pdb
 C:\Users\wagne\Projetos\Crud-Usuario\obj\Debug\net6.0\usuario.genruntimeconfig.cache
 C:\Users\wagne\Projetos\Crud-Usuario\obj\Debug\net6.0\ref\usuario.dll
+C:\Users\wagne\Projetos\Crud-Usuario\bin\Debug\net6.0\Humanizer.dll
+C:\Users\wagne\Projetos\Crud-Usuario\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\wagne\Projetos\Crud-Usuario\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\wagne\Projetos\Crud-Usuario\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\wagne\Projetos\Crud-Usuario\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\wagne\Projetos\Crud-Usuario\bin\Debug\net6.0\Npgsql.dll
+C:\Users\wagne\Projetos\Crud-Usuario\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
