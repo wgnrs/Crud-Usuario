@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using user.Model;
+using user.Repository;
 
 namespace user.Controllers
 {
@@ -7,10 +8,10 @@ namespace user.Controllers
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
-        private static List<User> Users => new List<User>
-            {
-                new User {Id = 1, Name = "Wagner", BirthDate = new DateTime(1995/10/28)}
-            };
+        public UserController(IUserRepository repository)
+        {
+            
+        }
 
         [HttpGet]
         public IActionResult Get()
