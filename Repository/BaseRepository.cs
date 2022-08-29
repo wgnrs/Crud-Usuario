@@ -2,44 +2,52 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
+using user.Data;
+using user.Model;
 
 namespace user.Repository.Interfaces
 
 {
-    public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
+    public abstract class BaseRepository<T> : IBaseRepository<T> where T : Identifier
     {
-        public ApplicationDbContext context;
-
-        public BaseRepository(ApplicationDbContext context)
+        protected UserDbContext context;
+        public BaseRepository() : base()
         {
-            this.context = context;
-        }       
-
-        public async Task<List<T>> GetAll(int id)
+            this.context = new UserDbContext();
+        }
+        public BaseRepository(DbContextOptions<UserDbContext> options) : base ()
         {
-            var list = await QueryAll().ToListAsync();
+            this.context = new UserDbContext(options);
+        }
+
+        public virtual async Task<List<T>> GetAll()
+        {
+            var list = await context.Set<T>().ToListAsync();
             return list;
         }
 
-        public async Task<T> GetById(int id)
+        public virtual async Task<T> GetById(Guid id)
         {
-            var entity = await QueryAll().FirstOrDefaultAsync();
+            var entity = await context.Set<T>().FirstOrDefaultAsync(x => x.IdGuid == id);
             return entity;
         }
 
-        public bool Save(T obj)
+        public virtual bool Save(T obj)
         {
-            throw new NotImplementedException();
+            context.Set<T>().Add(obj);
+            return true;
         }
 
-        public bool Update(T obj)
+        public virtual bool Update(T obj)
         {
-            throw new NotImplementedException();
+            context.Entry(obj).State = EntityState.Modified;
+            return true;
         }
 
-         public bool Delete(T obj)
+        public virtual bool Delete(T obj)
         {
-            throw new NotImplementedException();
+            context.Entry(obj).State = EntityState.Deleted;
+            return true;
         }
 
         private IQueryable<T> QueryAll()
